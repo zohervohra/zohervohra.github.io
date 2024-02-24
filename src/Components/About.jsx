@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
     return (
         <div>
-            <section className="w-full py-12 md:py-24 lg:py-32 ">
+            <section className="w-full py-12 md:py-24 lg:py-32  xl:flex xl:justify-center">
                 <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
                     <div className="space-y-3">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">About Me</h2>

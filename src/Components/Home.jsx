@@ -5,9 +5,9 @@ import pic from '../assets/pic.jpg'
 export default function Home() {
     return (
         <div>
-            <section className="w-full py-12 md:py-24 lg:py-32 xl:py-40">
+            <section className="w-full py-12 md:py-24 lg:py-32 xl:py-40 xl:flex xl:items-center xl:justify-center">
                 <div className="container px-4 md:px-6">
-                    <div className="flex flex-col-reverse md:grid gap-6 lg:grid-cols-3 lg:gap-12 xl:gap-16 ">
+                    <div className="flex flex-col-reverse md:grid gap-6 lg:grid-cols-3 lg:gap-12 xl:gap-16 xl:flex-row">
                         <div className="flex flex-col justify-center space-y-4  col-span-2">
                             <div className="space-y-2">
                                 <h1 className="text-2xl font-bold tracking-tighter sm:text-5xl text-primary">Hello , I am Zoher Vohra</h1>

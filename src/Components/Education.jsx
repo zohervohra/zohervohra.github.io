@@ -7,7 +7,7 @@ AOS.init();
 export default function Education() {
   return (
     <div>
-        <section className="w-full py-12 md:py-24 lg:py-32" >
+        <section className="w-full py-12 md:py-24 lg:py-32  xl:flex xl:justify-center" >
       <div className="container grid items-center gap-6 px-4 text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">Education</h2>
