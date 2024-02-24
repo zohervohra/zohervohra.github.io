@@ -50,7 +50,7 @@ export default function Projects() {
                 width="400"
                 height="225"
                 alt="Project"
-                className="aspect-video overflow-hidden rounded-lg object-cover object-center w-full"
+                className=" overflow-hidden rounded-lg object-cover object-center w-full"
               />
               <div className="space-y-2 w-full">
                 <h3 className="text-xl font-bold text-secondary">TextUtils</h3>
