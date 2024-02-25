@@ -11,7 +11,7 @@ export default function Navbar() {
 <header className="px-4 lg:px-6 py-4 sm:py-6 md:py-8 border-b border-black flex items-center justify-between">
     <div className="flex items-center space-x-2">
       <a className="flex items-center space-x-2" href="#">
-        <img src="logo" alt="" />
+      
        
         <span className="font-semibold text-primary text-md sm:text-xl"> Zoher Vohra</span>
       </a>
