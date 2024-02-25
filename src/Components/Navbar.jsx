@@ -7,8 +7,8 @@ import { FaGithub , FaTwitter } from "react-icons/fa";
 export default function Navbar() {
   return (
 
-<div >
-<header className="px-4 lg:px-6 py-4 sm:py-6 md:py-8 border-b border-black flex items-center justify-between">
+<div>
+<header className="px-4 lg:px-6 py-4 sm:py-6 md:py-8 border-b border-black flex items-center justify-between fixed top-0 left-0 w-full z-10"  style={ {backdropFilter: 'blur(10px)'}}>
     <div className="flex items-center space-x-2">
       <a className="flex items-center space-x-2" href="#">
       
@@ -18,7 +18,10 @@ export default function Navbar() {
     </div>
     <nav className=" hidden md:flex items-center gap-4 lg:gap-6 text-white ">
    
- 
+    <a className="text-md font-medium  hover:text-primary transition-colors duration-300" href="#">
+      <Link to="Home" smooth={true} duration={500}>Home</Link>
+      
+      </a>
       <a className="text-md font-medium  hover:text-primary transition-colors duration-300" href="#">
       <Link to="About" smooth={true} duration={500}>About</Link>
         {/* About */}
