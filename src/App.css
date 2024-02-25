@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,20 +48,19 @@
   /* Basic dimensions and centering */
   width: 100%;
   height: 100%;
-  
+
 
   /* Dark mode colors and gradient */
-  background: #121212; /* Fallback for browsers that don't support gradients */
-  background: linear-gradient(
-    135deg,
-    #121212 25%,
-    #1a1a1a 25%,
-    #1a1a1a 50%,
-    #121212 50%,
-    #121212 75%,
-    #1a1a1a 75%,
-    #1a1a1a
-  );
+  background: #121212;
+  /* Fallback for browsers that don't support gradients */
+  background: linear-gradient(135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a);
   background-size: 40px 40px;
 
   /* Animation */
@@ -69,6 +71,7 @@
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 40px 40px;
   }
@@ -76,24 +79,88 @@
 
 @keyframes movePattern {
   0% {
-      background-position: 0 0, 0 0, 0 0, 0 0; /* Initial position of all gradients */
+    background-position: 0 0, 0 0, 0 0, 0 0;
+    /* Initial position of all gradients */
   }
+
   100% {
-      background-position: 40px 40px, 40px 40px, 0 40px, 0 40px; /* Final position of all gradients */
+    background-position: 40px 40px, 40px 40px, 0 40px, 0 40px;
+    /* Final position of all gradients */
   }
 }
 
 .pattern6 {
-  background-color: #000000; /* Set the background color to black */
-  opacity: 1; /* Set the opacity to 1 (fully opaque) */
-  animation: movePattern 2s linear infinite; /* Apply animation */
-  background: 
-      linear-gradient(135deg, #ffe3e655 25%, transparent 25%) -40px -40px/ 80px 80px, /* First gradient */
-      linear-gradient(225deg, #ffe3e6 25%, transparent 25%) -40px -40px/ 80px 80px, /* Second gradient */
-      linear-gradient(315deg, #ffe3e655 25%, transparent 25%) 0 -40px/ 80px 80px, /* Third gradient */
-      linear-gradient(45deg, #ffe3e6 25%, #000000 25%) 0 -40px/ 80px 80px; /* Fourth gradient */
+  background-color: #000000;
+  /* Set the background color to black */
+  opacity: 1;
+  /* Set the opacity to 1 (fully opaque) */
+  animation: movePattern 2s linear infinite;
+  /* Apply animation */
+  background:
+    linear-gradient(135deg, #ffe3e655 25%, transparent 25%) -40px -40px/ 80px 80px,
+    /* First gradient */
+    linear-gradient(225deg, #ffe3e6 25%, transparent 25%) -40px -40px/ 80px 80px,
+    /* Second gradient */
+    linear-gradient(315deg, #ffe3e655 25%, transparent 25%) 0 -40px/ 80px 80px,
+    /* Third gradient */
+    linear-gradient(45deg, #ffe3e6 25%, #000000 25%) 0 -40px/ 80px 80px;
+  /* Fourth gradient */
+}
+
+.pattern7 {
+  background-color: #000000;
+  opacity: 1;
+  background-image: linear-gradient(#0e0e0e 1.6px, transparent 1.6px), linear-gradient(to right, #0e0e0e 1.6px, #000000 1.6px);
+  background-size: 32px 32px;
 }
 
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  /* gap: 15px; */
+}
 
+/* .cards .red {
+  background-color: #007e9e;
+}
 
+.cards .blue {
+  background-color: #0062ff;
+}
+
+.cards .green {
+  background-color: #18cd5e;
+} */
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* height: 100px;
+  width: 100px; */
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}

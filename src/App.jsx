@@ -6,6 +6,8 @@ import About from './Components/About'
 import Education from './Components/Education'
 import { Link  , Element} from 'react-scroll';
 import Projects from './Components/Projects'
+import Footer from './Components/Footer'
+import Skills from './Components/Skills'
 
 
 function App() {
@@ -26,14 +28,15 @@ function App() {
   };
  
   return (
-    // <div style={{backgroundColor:"#02000C"}}> 
-    <div className='pattern4'>
+    // <div style={{backgroundColor:"#0D0A14"}}> 
+     <div className='pattern7'>
       <Navbar/>
       <Element ><Home /></Element>
       <Element name='About' ><About /></Element>
+      <Element name='Skills' ><Skills /></Element>
       <Element name='Education' ><Education/></Element>
       <Element name='Projects' ><Projects/></Element>
-     
+      <Footer/>
     </div>
   )
 }

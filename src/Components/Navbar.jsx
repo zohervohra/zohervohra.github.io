@@ -16,20 +16,23 @@ export default function Navbar() {
         <span className="font-semibold text-primary text-md sm:text-xl"> Zoher Vohra</span>
       </a>
     </div>
-    <nav className=" hidden md:flex items-center gap-4 lg:gap-6 text-primary">
+    <nav className=" hidden md:flex items-center gap-4 lg:gap-6 text-white ">
    
  
-      <a className="text-md font-medium hover:underline underline-offset-4" href="#">
+      <a className="text-md font-medium  hover:text-primary transition-colors duration-300" href="#">
       <Link to="About" smooth={true} duration={500}>About</Link>
         {/* About */}
       </a>
-      <a className="text-md font-medium hover:underline underline-offset-4" href="#">
+      <a className="text-md font-medium  hover:text-primary  transition-colors duration-300 " href="#">
+      <Link to="Skills" smooth={true} duration={500}>Skills</Link>
+      </a>
+      <a className="text-md font-medium  hover:text-primary transition-colors duration-300" href="#">
       <Link to="Education" smooth={true} duration={500}>Education</Link>
       </a>
-      <a className="text-md font-medium hover:underline underline-offset-4" href="#">
+      <a className="text-md font-medium  hover:text-primary transition-colors duration-300" href="#">
       <Link to="Projects" smooth={true} duration={500}>Projects</Link>
       </a>
-      {/* <a className="text-md font-medium hover:underline underline-offset-4" href="#">
+      {/* <a className="text-md font-medium " href="#">
         Contact
       </a> */}
     
@@ -38,13 +41,13 @@ export default function Navbar() {
     <div className="flex items-center space-x-2 ">
             <a href="https://github.com/zohervohra" className='px-1 sm:px-1 '>
               {/* <img src={<FaGithub/>} alt="" height='30px' width='30px'/> */}
-              <FaGithub style={{color:'white' ,  height:'30px',  width:'30px' }}/> 
+              <FaGithub style={{color : "white"}} className=' h-6 w-6  sm:h-8 sm:w-8' /> 
             </a>
             <a href="https://www.linkedin.com/in/zoher-vohra-b5b9761b6/"  className='px-1 sm:px-1' >
-            <img src={linkedInLogo} alt=""  height='30px' width='30px'/>
+            <img src={linkedInLogo} alt="" className=' h-6 w-6  sm:h-8 sm:w-8'/>
             </a>
             <a href="https://twitter.com/ZoVoHere"  className='px-1 max-sm:px-1 ' >
-            <FaTwitter style={{color:'white' ,  height:'30px',  width:'30px' }}/> 
+            <FaTwitter style={{color:'white' }} className=' h-6 w-6  sm:h-8 sm:w-8'/> 
             </a>
           </div>
   </header>
