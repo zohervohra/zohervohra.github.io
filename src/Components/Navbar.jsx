@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
 
 <div>
-<header className="px-4 lg:px-6 py-4 sm:py-6 md:py-8 border-b border-black flex items-center justify-between fixed top-0 left-0 w-full z-10"  style={ {backdropFilter: 'blur(10px)'}}>
+<header className="px-4 lg:px-6 py-4 sm:py-6 md:py-8 border-b border-black flex items-center justify-between fixed top-0 left-0 w-full z-10 max-sm:bg-black"  style={ {backdropFilter: 'blur(10px)' }}>
     <div className="flex items-center space-x-2">
       <a className="flex items-center space-x-2" href="#">
       
